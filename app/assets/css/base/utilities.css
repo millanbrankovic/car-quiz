@@ -300,6 +300,10 @@
     z-index: var(--z-negative);
 }
 
+.u-light-color {
+    color: var(--brand-md-gray);
+}
+
 /**
 * (Breakpoint dependant) display classes
 */
