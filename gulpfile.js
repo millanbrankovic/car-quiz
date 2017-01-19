@@ -101,21 +101,21 @@ gulp.task('scriptRefresh', ['scripts'], function() {
 });
 
 // delete dist folder
-gulp.task('deleteDocs', function() {
-    return del('docs');
+gulp.task('deleteDist', function() {
+    return del('dist');
 });
 
 // preview distributable version
-gulp.task('previewDocs', function() {
+gulp.task('previewDist', function() {
     browserSync.init({
         server: {
-            baseDir: 'docs'
+            baseDir: 'dist'
         }
     });
 });
 
 // optimize images and copy to distributable folder
-gulp.task('optimizeImages', ['deleteDocs'], function() {
+gulp.task('optimizeImages', ['deleteDist'], function() {
     return gulp.src(['app/assets/img/**/*.+(jpg|svg|ico)'])
         .pipe(imagemin({
             progressive: true,
@@ -123,24 +123,24 @@ gulp.task('optimizeImages', ['deleteDocs'], function() {
             multipass: true,
             optimizationLevel: 3
         }))
-        .pipe(gulp.dest('docs/assets/img'));
+        .pipe(gulp.dest('dist/assets/img'));
 });
 
-// copy fonts to docs folder
-gulp.task('fonts', ['deleteDocs'], function() {
+// copy fonts to dist folder
+gulp.task('fonts', ['deleteDist'], function() {
     return gulp.src('app/assets/fonts/**/*')
-        .pipe(gulp.dest('docs/assets/fonts'));
+        .pipe(gulp.dest('dist/assets/fonts'));
 });
 
 // generate revisioned and minified files
-gulp.task('usemin', ['deleteDocs', 'css', 'scripts'], function() {
+gulp.task('usemin', ['deleteDist', 'css', 'scripts'], function() {
     return gulp.src('app/**/*.html')
         .pipe(usemin({
             css: [function() {return rev()}, function() {return cssnano()}],
             js: [function() {return rev()}, function() {return uglify()}]
         }))
-        .pipe(gulp.dest('docs'));
+        .pipe(gulp.dest('dist'));
 });
 
 // build production environment
-gulp.task('build', ['deleteDocs', 'optimizeImages', 'fonts', 'usemin']);
+gulp.task('build', ['deleteDist', 'optimizeImages', 'fonts', 'usemin']);
