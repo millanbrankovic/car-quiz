@@ -1,0 +1,16 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="haircolor">
+            Haircolor
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <select class="custom-input custom-input--select" name="haircolor" id="haircolor" data-amount>
+            <option value="5">Blonde</option>
+            <option value="4">Brown</option>
+            <option value="3">Black</option>
+            <option value="2">Red</option>
+            <option value="1">Grey</option>
+        </select>
+    </div>
+</div>

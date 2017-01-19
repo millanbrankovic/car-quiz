@@ -1,0 +1,11 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="age">
+            Age
+        </label>
+        <output class="row-span"></output>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <input type="range" name="age" min="18" max="90" value="22" id="age" data-rangeslider data-amount>
+    </div>
+</div>

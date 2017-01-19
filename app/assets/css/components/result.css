@@ -1,0 +1,23 @@
+.result {
+    opacity: 0;
+    text-align: center;
+    animation: scale 1s .7s forwards;
+}
+
+.result-span {
+    margin-top: 0;
+    margin-bottom: var(--gutter);
+}
+
+.result-output {
+    width: 130px;
+    height: 130px;
+    color: white;
+    border-radius: var(--radius-large);
+    background: var(--brand-yellow);
+}
+
+.result-number {
+    line-height: 1;
+    font-size: var(--h1-font-size-large);
+}

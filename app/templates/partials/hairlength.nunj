@@ -1,0 +1,33 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Hairlength
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="4" id="long" data-amount checked>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="long">
+                Long
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="3" id="middle" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="middle">
+                Middle
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="2" id="short" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="short">
+                Short
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="1" id="bald" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="bald">
+                Bald
+            </label>
+        </div>
+    </div>
+</div>

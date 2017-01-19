@@ -1,0 +1,103 @@
+:root {
+
+    /**
+    * Color swatches
+    */
+    --brand-blue: #29B6F6;
+    --brand-md-blue: #73d5ff;
+    --brand-lt-blue: #b1e8ff;
+    --brand-dk-blue: #188fc1;
+    --brand-green: #30cb00;
+    --brand-lt-lt-green: #bcfea7;
+    --brand-lt-green: #a2f389;
+    --brand-md-lt-green: #8ce371;
+    --brand-md-green: #4bd520;
+    --brand-dk-green: #31ac0b;
+    --brand-yellow: #fad733;
+    --brand-gray: #e2e8eb;
+    --brand-lt-gray: #f8fbfd;
+    --brand-lt-md-gray: #f0f4f6;
+    --brand-md-gray: #b1c0c9;
+    --brand-md-lt-gray: #d6e0e5;
+    --brand-dk-gray: #4f728e;
+    --brand-brown: #7b4f2c;
+
+    /**
+    * Global Colors
+    */
+    --white-transparent: color(white a(70%));
+    --black-transparent: color(black a(40%));
+
+    /**
+    * Grid Settings
+    */
+    --gutter: 15px;
+    --gutter-thiny: 1px;
+    --gutter-small: 5px;
+    --gutter-medium: 10px;
+    --gutter-md-large: 20px;
+    --gutter-large: 30px;
+    --gutter-huge: 60px;
+    --max-page-width: 960px;
+    --max-page-width-full: none;
+
+    /**
+    * Z-indexes
+    */
+    --z-negative: -1;
+
+    /**
+    * Fonts
+    */
+    --font-primary: "Open Sans", sans-serif;
+
+    /**
+    * Font Sizes
+    */
+    /* Root font size */
+    --body-font-size: 16px;
+    --body-font-small: 0.723rem;
+    --body-font-medium: 0.8125rem; /** = 13px */
+
+    /* Type scale */
+    --h1-font-size: 1.342rem;
+    --h1-font-size-large: 2.857rem;
+    --h2-font-size: 1.424rem;
+    --h2-font-size-large: 2.369rem;
+    --h3-font-size: 1.246rem;
+    --h3-font-size-large: 1.777rem;
+    --h4-font-size: 1.115rem;
+    --h4-font-size-large: 1.333rem;
+    --h5-font-size: 1rem;
+    --h5-font-size-large: 1.125rem;
+    --h6-font-size: 0.75rem;
+
+    /* Font weight */
+    --light-font: 300;
+    --regular-font: 400;
+    --bold-font: 700;
+
+    /**
+    * UI Styles
+    */
+    --radius: 3px;
+    --radius-large: 100px;
+    --transition: all .3s ease;
+    --border: 1px solid var(--brand-lt-md-gray);
+
+    /* Transition settings */
+    --duration: 0.3s;
+    --easing: ease;
+    --transition: all var(--duration) var(--easing);
+}
+
+/**
+* Breakpoints
+*/
+@custom-media --small (width >= 480px);
+@custom-media --phablet (width >= 540px);
+@custom-media --medium (width >= 600px);
+@custom-media --tablet (width >= 768px);
+@custom-media --large (width >= 1024px);
+@custom-media --desktop (width >= 1280px);
+@custom-media --hddesktop (width >= 1920px);

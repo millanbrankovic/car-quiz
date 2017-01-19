@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Socialsweethearts</title>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!-- Preload the most important fonts to avoid FOIT - https://www.zachleat.com/web/preload/ -->
+    <link rel="preload" href="assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- build:css assets/css/styles.css -->
+    <link rel="stylesheet" href="/build/css/styles.css">
+    <!-- endbuild -->
+    <!-- build:css assets/css/styles-data.css -->
+    <link rel="stylesheet" href="/build/css/styles-data.css">
+    <!-- endbuild -->
+</head>
+    <body>
+    
+    <header class="header u-flex u-align-items-center">
+    <div class="wrapper u-align-c">
+        <h1 class="h1 h1--hero">Find your perfect car</h1>
+    </div>
+</header>
+
+    <main class="main">
+    <span></span>
+
+    <form class="wrapper">
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="age">
+            Age
+        </label>
+        <output class="row-span"></output>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <input type="range" name="age" min="18" max="90" value="22" id="age" data-rangeslider data-amount>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="height">
+            Height (cm)
+        </label>
+        <output class="row-span"></output>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <input type="range" name="height" min="140" max="220" value="176" id="height" data-rangeslider data-amount>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="haircolor">
+            Haircolor
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <select class="custom-input custom-input--select" name="haircolor" id="haircolor" data-amount>
+            <option value="5">Blonde</option>
+            <option value="4">Brown</option>
+            <option value="3">Black</option>
+            <option value="2">Red</option>
+            <option value="1">Grey</option>
+        </select>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Hairlength
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="4" id="long" data-amount checked>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="long">
+                Long
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="3" id="middle" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="middle">
+                Middle
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="2" id="short" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="short">
+                Short
+            </label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="hair-length" value="1" id="bald" data-amount>
+            <label class="custom-input-label custom-input-label--check custom-input-label--bg" for="bald">
+                Bald
+            </label>
+        </div>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Eyecolor
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="4" id="blue" data-amount checked>
+            <label class="custom-input-label custom-input-label--radio" for="blue">
+                Blue
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="3" id="green" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="green">
+                Green
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="2" id="brown" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="brown">
+                Brown
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="1" id="grey" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="grey">
+                Grey
+            </label>
+        </div>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Personality
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="50" id="smarty" data-amount checked>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-smarty custom-input-label--bg" for="smarty"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="10" id="muscular" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-muscular custom-input-label--bg" for="muscular"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="40" id="extrovert" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-extrovert custom-input-label--bg" for="extrovert"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="5" id="introvert" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-introvert custom-input-label--bg" for="introvert"></label>
+        </div>
+    </div>
+</div>
+
+        <div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Car type
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="22" id="sedan" data-amount checked>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-sedan custom-input-label--bg" for="sedan"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="33" id="sporty" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-sporty custom-input-label--bg" for="sporty"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="11" id="suv" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-suv custom-input-label--bg" for="suv"></label>
+        </div>
+    </div>
+</div>
+
+
+        <input class="button button--outline button--block u-margin-large-t u-radius-large" type="submit" value="Find the perfect car">
+    </form>
+
+    <div class="wrapper" id="result">
+    <div class="row row--gutters u-flex-center">
+        <span class="icon icon--sportycar"></span>
+
+        <div class="row-cell u-full u-flex-center">
+            <div class="result u-flex u-flex-column u-flex-center u-align-items-center">
+                <span class="result-span h3">
+                    And the maximum speed of your car is
+                </span>
+                <div class="result-output u-flex u-flex-column u-flex-center u-align-items-center">
+                    <span class="result-number"></span>
+                    <span>Km/h</span>
+                </div>
+            </div>
+        </div>
+
+        <a class="button button--secondary u-margin-huge-t is-animated" href="/">
+            Don't like it? Try again!
+        </a>
+    </div>
+</div>
+
+
+</main>
+
+    <footer class="footer">
+    <div class="wrapper">
+        <small>Copyright 2017</small>
+    </div>
+</footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+    <!-- build:js assets/js/app.js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    </body>
+</html>

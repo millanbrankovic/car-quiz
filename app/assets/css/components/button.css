@@ -1,0 +1,74 @@
+.button {
+    display: inline-block;
+    padding: var(--gutter-medium) var(--gutter-large);
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--brand-md-gray);
+    font-weight: var(--regular-font);
+    border: 1px solid var(--brand-md-gray);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    background-color: white;
+
+    &:hover,
+    &:focus {
+        color: var(--brand-dk-gray);
+        border-color: var(--brand-dk-gray);
+    }
+
+    &:focus {
+        background-color: var(--brand-md-lt-gray);
+    }
+
+    &--wide {
+        width: 100%;
+    }
+
+    &--block {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &--secondary {
+        color: white;
+        border: transparent;
+        background-color: var(--brand-green);
+
+        &:hover {
+            color: white;
+            background-color: var(--brand-md-green);
+        }
+
+        &:focus,
+        &:active {
+            color: white;
+            background-color: var(--brand-dk-green);
+        }
+    }
+
+    &--radius {
+        border-radius: var(--radius-large);
+    }
+
+    &--outline {
+        border-width: 3px;
+        border-style: solid;
+    }
+
+    &--outline-secondary {
+        color: var(--brand-green);
+        border-color: var(--brand-green);
+
+        &:hover {
+            background-color: var(--brand-green);
+        }
+    }
+
+    &.is-animated {
+        opacity: 0;
+        animation: opacity .8s 1.2s forwards;
+    }
+}

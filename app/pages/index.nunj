@@ -1,0 +1,7 @@
+{% extends "./layouts/base.nunj" %}
+
+{% block content %}
+    {% include './shared/header.nunj' %}
+    {% include './pages/home.nunj' %}
+    {% include './shared/footer.nunj' %}
+{% endblock %}

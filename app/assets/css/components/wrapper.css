@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--gutter);
+
+    @media (--large) {
+        padding: 0;
+        max-width: var(--max-page-width);
+    }
+}

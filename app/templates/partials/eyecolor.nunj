@@ -1,0 +1,33 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Eyecolor
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="4" id="blue" data-amount checked>
+            <label class="custom-input-label custom-input-label--radio" for="blue">
+                Blue
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="3" id="green" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="green">
+                Green
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="2" id="brown" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="brown">
+                Brown
+            </label>
+        </div>
+        <div class="custom-input u-flex u-flex-center">
+            <input class="custom-input-input" type="radio" name="eye-color" value="1" id="grey" data-amount>
+            <label class="custom-input-label custom-input-label--radio" for="grey">
+                Grey
+            </label>
+        </div>
+    </div>
+</div>

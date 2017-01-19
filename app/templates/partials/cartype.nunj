@@ -1,0 +1,21 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Car type
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="22" id="sedan" data-amount checked>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-sedan custom-input-label--bg" for="sedan"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="33" id="sporty" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-sporty custom-input-label--bg" for="sporty"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="car-type" value="11" id="suv" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-suv custom-input-label--bg" for="suv"></label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4">
+            Personality
+        </label>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="50" id="smarty" data-amount checked>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-smarty custom-input-label--bg" for="smarty"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="10" id="muscular" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-muscular custom-input-label--bg" for="muscular"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="40" id="extrovert" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-extrovert custom-input-label--bg" for="extrovert"></label>
+        </div>
+        <div class="custom-input">
+            <input class="custom-input-input" type="radio" name="personality" value="5" id="introvert" data-amount>
+            <label class="custom-input-label custom-input-label--ico custom-input-label--ico-introvert custom-input-label--bg" for="introvert"></label>
+        </div>
+    </div>
+</div>

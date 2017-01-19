@@ -1,0 +1,36 @@
+{
+  "name": "socialsweethearts-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millanbrankovic/socialsweethearts.git"
+  },
+  "author": "Milan Brankovic",
+  "license": "ISC",
+  "homepage": "https://github.com/millanbrankovic/socialsweethearts#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-sourcemaps": "^2.2.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-usemin": "^0.3.27",
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-data-packer": "^1.2.3",
+    "postcss-import": "^9.0.0",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-pxtorem": "^3.3.1"
+  }
+}

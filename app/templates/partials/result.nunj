@@ -1,0 +1,21 @@
+<div class="wrapper" id="result">
+    <div class="row row--gutters u-flex-center">
+        <span class="icon icon--sportycar"></span>
+
+        <div class="row-cell u-full u-flex-center">
+            <div class="result u-flex u-flex-column u-flex-center u-align-items-center">
+                <span class="result-span h3">
+                    And the maximum speed of your car is
+                </span>
+                <div class="result-output u-flex u-flex-column u-flex-center u-align-items-center">
+                    <span class="result-number"></span>
+                    <span>Km/h</span>
+                </div>
+            </div>
+        </div>
+
+        <a class="button button--secondary u-margin-huge-t is-animated" href="/">
+            Don't like it? Try again!
+        </a>
+    </div>
+</div>

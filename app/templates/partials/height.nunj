@@ -1,0 +1,11 @@
+<div class="row row--gutters row--divider">
+    <div class="row-cell u-full u-med-1of3">
+        <label class="h4" for="height">
+            Height (cm)
+        </label>
+        <output class="row-span"></output>
+    </div>
+    <div class="row-cell u-full u-med-2of3">
+        <input type="range" name="height" min="140" max="220" value="176" id="height" data-rangeslider data-amount>
+    </div>
+</div>

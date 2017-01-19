@@ -1,0 +1,18 @@
+<main class="main">
+    <span></span>
+
+    <form class="wrapper">
+        {% include '../partials/age.nunj' %}
+        {% include '../partials/height.nunj' %}
+        {% include '../partials/haircolor.nunj' %}
+        {% include '../partials/hairlength.nunj' %}
+        {% include '../partials/eyecolor.nunj' %}
+        {% include '../partials/personality.nunj' %}
+        {% include '../partials/cartype.nunj' %}
+
+        <input class="button button--outline button--block u-margin-large-t u-radius-large" type="submit" value="Find the perfect car">
+    </form>
+
+    {% include '../partials/result.nunj' %}
+
+</main>

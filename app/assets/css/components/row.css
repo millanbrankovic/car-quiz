@@ -1,0 +1,38 @@
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &--gutters {
+        padding-top: var(--gutter-large);
+        @mixin gutters;
+    }
+
+    &--divider {
+        border-bottom: var(--border);
+    }
+}
+
+.row-cell {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-child {
+        margin-bottom: var(--gutter);
+
+        @media (--medium) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.row-span {
+    color: var(--brand-md-gray);
+
+    @media (--medium) {
+        margin-right: var(--gutter);
+    }
+}

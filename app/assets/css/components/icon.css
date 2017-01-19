@@ -1,0 +1,20 @@
+.icon {
+    width: 180px;
+    height: 100px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: var(--transition);
+
+    @media (--tablet) {
+        width: 250px;
+        height: 150px;
+    }
+
+    &--sportycar {
+        opacity: 0;
+        animation: opacity .8s .4s forwards;
+        background-image: svg-load('car-sporty.svg');
+    }
+}

@@ -1,0 +1,236 @@
+.custom-input {
+    flex-grow: 1;
+    position: relative;
+
+    &:first-child {
+        .custom-input-label {
+            &--bg {
+                border-top-left-radius: var(--radius);
+                border-bottom-left-radius: var(--radius);
+            }
+        }
+    }
+
+    &:last-child {
+        .custom-input-label {
+            &--bg {
+                border-right: 1px solid var(--brand-green);
+
+                &:last-child {
+                    border-top-right-radius: var(--radius);
+                    border-bottom-right-radius: var(--radius);
+                }
+            }
+        }
+    }
+
+    &--select {
+        padding: var(--gutter-medium);
+        appearance: none;
+        border-radius: var(--radius);
+        border: 1px solid var(--brand-gray);
+        background: white svg-load("ico-arrow.svg", fill: var(--brand-md-gray)) no-repeat center right;
+    }
+}
+
+.custom-input-input {
+    visibility: hidden;
+    position: absolute;
+
+    + .custom-input-label {
+        display: flex;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        align-items: center;
+        font-size: var(--body-font-medium);
+        font-weight: var(--light-font);
+        transition: var(--transition);
+
+        &::before,
+        &::after {
+            content: "";
+            transition: var(--transition);
+        }
+
+        &::before {
+            width: 18px;
+            height: 18px;
+            border: 1px solid var(--brand-gray);
+            border-radius: var(--radius-large);
+            background-color: white;
+        }
+
+        &--bg {
+            justify-content: center;
+            padding: var(--gutter-medium);
+            border-left: 1px solid var(--brand-green);
+            border-top: 1px solid var(--brand-green);
+            border-bottom: 1px solid var(--brand-green);
+        }
+
+        &--check {
+            &::before,
+            &::after {
+                display: none;
+                transform: scale(0);
+                position: absolute;
+
+                @media (--phablet) {
+                    display: block;
+                }
+            }
+
+            &::before {
+                left: 10px;
+                border-color: transparent;
+            }
+
+            &::after {
+                top: 11px;
+                left: 10px;
+            }
+        }
+
+        &--radio {
+            &::before {
+                margin-right: var(--gutter-small);
+            }
+
+            &::after {
+                width: 10px;
+                height: 10px;
+                top: 5px;
+                left: 4px;
+                opacity: 0;
+                position: absolute;
+                border-radius: var(--radius-large);
+                background-color: var(--brand-blue);
+            }
+        }
+
+        &--ico {
+            height: 100px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            @media (--tablet) {
+                background-size: 60%;
+            }
+
+            @media (--large) {
+                background-size: 55%;
+            }
+
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            &-smarty {
+                background-image: svg-load("smarty.svg");
+            }
+
+            &-muscular {
+                background-image: svg-load("muscular.svg");
+            }
+
+            &-extrovert {
+                background-image: svg-load("extrovert.svg");
+            }
+
+            &-introvert {
+                background-image: svg-load("introvert.svg");
+            }
+
+            &-sedan {
+                background-image: svg-load("car-sedan.svg");
+            }
+
+            &-sporty {
+                background-image: svg-load("car-sporty.svg");
+            }
+
+            &-suv {
+                background-image: svg-load("car-suv.svg");
+            }
+        }
+    }
+
+    &:checked {
+        + .custom-input-label {
+            &--bg {
+                color: white;
+                background-color: var(--brand-md-green);
+            }
+
+            &--check {
+                &::before,
+                &::after {
+                    transform: scale(1);
+                }
+
+                &::before {
+                    background-color: white;
+                }
+
+                &::after {
+                    width: 18px;
+                    height: 18px;
+                    background: svg-load("ico-checkmark.svg", fill: var(--brand-green)) no-repeat center center / 16px;
+                }
+            }
+
+            &--radio {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &[disabled] {
+            + .custom-input-label {
+                &--radio {
+                    &::after {
+                        background-color: var(--brand-gray);
+                    }
+                }
+            }
+        }
+    }
+
+    &[disabled] {
+        + .custom-input-label {
+            cursor: default;
+            pointer-events: none;
+            color: var(--brand-gray);
+
+            &--bg {
+                background-color: var(--brand-lt-gray);
+            }
+
+            &--check {
+                &::before {
+                    border-color: var(--brand-gray);
+                    background-color: var(--brand-gray);
+                }
+
+                &::after {
+                    background: svg-load("ico-checkmark.svg", fill: var(--brand-md-gray)) no-repeat center center;
+                }
+            }
+
+            &--radio {
+                &::before {
+                    border-color: var(--brand-gray);
+                    background-color: var(--brand-lt-md-gray);
+                }
+
+                &::after {
+                    background-color: var(--brand-lt-md-gray);
+                }
+            }
+        }
+    }
+}
