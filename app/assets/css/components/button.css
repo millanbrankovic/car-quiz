@@ -7,7 +7,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--brand-md-gray);
-    font-weight: var(--regular-font);
+    font-weight: var(--bold-font);
     border: 1px solid var(--brand-md-gray);
     border-radius: var(--radius);
     transition: var(--transition);
