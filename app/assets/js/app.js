@@ -36,7 +36,7 @@
 
         $(window).scrollTop(0);
 
-        $(".h1--hero").text("Your found it!!!").addClass('is-animated');
+        $(".h1--hero").text("You found it!!!").addClass('is-animated');
 
         var total = 0;
         var amount = '[data-amount]';
