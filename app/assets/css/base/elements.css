@@ -61,6 +61,7 @@ small {
 input,
 select {
     border: none;
+    font-family: var(--font-primary);
     font-weight: var(--light-font);
     color: var(--brand-dk-gray);
 }
