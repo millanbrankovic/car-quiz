@@ -62,6 +62,9 @@
     /* Type scale */
     --h1-font-size: 1.342rem;
     --h1-font-size-large: 2.857rem;
+    --h1-font-size-hero: 1.642rem;
+    --h1-font-size-hero-medium: 2.857rem;
+    --h1-font-size-hero-large: 5.697rem;
     --h2-font-size: 1.424rem;
     --h2-font-size-large: 2.369rem;
     --h3-font-size: 1.246rem;

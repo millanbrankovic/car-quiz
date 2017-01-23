@@ -9,10 +9,15 @@
         z-index: 1;
         position: relative;
         line-height: 1.2;
-        font-size: calc(var(--body-font-size) + (32 - 16) * ( (100vw - 220px) / (580 - 320) ));
+        font-size: var(--h1-font-size-hero);
         text-shadow: 2px 2px 4px var(--black-transparent), 0 -2px 4px var(--black-transparent);
 
+        @media (--medium) {
+            font-size: var(--h1-font-size-hero-medium);
+        }
+
         @media (--large) {
+            font-size: var(--h1-font-size-hero-large);
             text-shadow: 4px 10px 12px var(--black-transparent), 0 -4px 12px var(--black-transparent);
         }
 
