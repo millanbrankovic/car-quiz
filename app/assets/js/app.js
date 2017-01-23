@@ -18,14 +18,6 @@
         polyfill: false,
         onInit: function() {
             valueOutput(this.$element[0]);
-        },
-        onSlide: function(position, value) {
-            console.log('onSlide');
-            console.log('position: ' + position, 'value: ' + value);
-        },
-        onSlideEnd: function(position, value) {
-            console.log('onSlideEnd');
-            console.log('position: ' + position, 'value: ' + value);
         }
     });
 
