@@ -1,7 +1,5 @@
 # Socialsweethearts
 
-## Small test based on requirements
-
 ### Key features
 ###### [BEM](https://en.bem.info/) approach
 ###### Scalable CSS architecture
