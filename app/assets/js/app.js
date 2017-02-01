@@ -25,9 +25,7 @@
     $("#result").addClass('u-hidden');
     $("form").on('submit', function(e) {
         e.preventDefault();
-
         $(window).scrollTop(0);
-
         $(".h1--hero").text("You found it!!!").addClass('is-animated');
 
         var total = 0;
