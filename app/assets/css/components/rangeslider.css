@@ -32,12 +32,14 @@
     position: absolute;
     border-radius: var(--radius-large);
     background-color: var(--brand-green);
-    transition: background-color .3s ease;
+    animation: growCircle .4s;
+    transition: background-color .3s, box-shadow .3s;
 }
 
 .rangeslider--active {
     .rangeslider__handle {
         background-color: var(--brand-dk-green);
+        box-shadow: 0 0 0 14px color(var(--brand-green) a(20%));
     }
 }
 
@@ -53,7 +55,7 @@ input[type="range"] {
         + .rangeslider {
             .rangeslider__handle {
                 background-color: var(--brand-dk-green);
-                box-shadow: 0 0 10px var(--brand-green);
+                box-shadow: 0 0 0 14px color(var(--brand-green) a(20%));
             }
         }
     }
